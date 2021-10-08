@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "testing-practice-theodinproject",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -8,13 +8,6 @@
     "start": "webpack-dashboard -- webpack serve --config dev.config.js --open",
     "build": "webpack"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/username/project.git"
-  },
-  "author": "username <email>",
-  "license": "ISC",
-  "homepage": "https://github.com/username/project#readme",
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
