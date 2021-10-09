@@ -5,7 +5,7 @@ const caesar = (string) => {
 
   const str = string.split('');
   for (let i = 0; i < str.length; i += 1) {
-    if (!/[a-zA-Z]/gi.test(str[i])) {
+    if (!/[a-z]/i.test(str[i])) {
       continue;
     }
     str[i] === str[i].toLowerCase() ? (a = alphabet) : (a = ALPHABET);
