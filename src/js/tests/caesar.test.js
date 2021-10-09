@@ -13,4 +13,8 @@ describe('caesar', () => {
   it(`should preserve punctuation!`, () => {
     expect(caesar('hello!')).toBe('ifmmp!');
   });
+    it(`should preserve numbers`, () => {
+      expect(caesar('Ab5')).toBe('Bc5');
+    });
+
 });
