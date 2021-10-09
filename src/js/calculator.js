@@ -1,7 +1,5 @@
 const calculator = {
-    add: () => {
-         return 5
-    }
+    add: (a,b) => a + b
 };
 
 export default calculator;
