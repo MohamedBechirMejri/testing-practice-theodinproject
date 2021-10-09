@@ -1,18 +1,17 @@
-const caesar = (string) => {
-  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
-  const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  let a;
+const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+let a;
 
-  const str = string.split('');
+const checkCase = (char) => (char === char.toLowerCase() ? alphabet : ALPHABET);
+
+function replaceLetter(array) {
+  const str = array;
   for (let i = 0; i < str.length; i += 1) {
-    if (!/[a-z]/i.test(str[i])) {
-      continue;
-    }
-    str[i] === str[i].toLowerCase() ? (a = alphabet) : (a = ALPHABET);
-    str[i] = a.charAt((a.indexOf(str[i]) + 1) % 26);
+    a = checkCase(str[i]);
+    if (/[a-z]/i.test(str[i])) str[i] = a.charAt((a.indexOf(str[i]) + 1) % 26);
   }
-
-  return str.join('');
-};
+  return str;
+}
+const caesar = (string) => replaceLetter(string.split('')).join('');
 
 export default caesar;
