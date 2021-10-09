@@ -27,3 +27,11 @@ it(`should return "1"`, () => {
 it(`should return ""`, () => {
   expect(calculator.divide(8, 4)).toBe(2);
 });
+
+it(`should return "10"`, () => {
+  expect(calculator.multiply(5, 2)).toBe(10);
+});
+
+it(`should return "0"`, () => {
+  expect(calculator.multiply(5, 0)).toBe(0);
+});
