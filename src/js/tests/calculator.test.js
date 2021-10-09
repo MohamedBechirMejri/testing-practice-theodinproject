@@ -19,3 +19,11 @@ it(`should return "1"`, () => {
 it(`should return "0"`, () => {
   expect(calculator.subtract(2, 2)).toBe(0);
 });
+
+it(`should return "1"`, () => {
+  expect(calculator.divide(2, 2)).toBe(1);
+});
+
+it(`should return ""`, () => {
+  expect(calculator.divide(8, 4)).toBe(2);
+});
