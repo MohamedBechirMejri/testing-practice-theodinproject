@@ -1,9 +1,11 @@
 import reverseString from '../reverseString';
 
-it(`should return "!olleH"`, () => {
+describe('reverseString', () => {
+  it(`should return "!olleH"`, () => {
     expect(reverseString('Hello!')).toBe('!olleH');
-});
+  });
 
-it(`should return "tset"`, () => {
-  expect(reverseString('test')).toBe('tset');
+  it(`should reverse different strings`, () => {
+    expect(reverseString('test')).toBe('tset');
+  });
 });
