@@ -7,7 +7,7 @@ const caesar = (string) => {
   for (let i = 0; i < str.length; i += 1) {
     // eslint-disable-next-line no-unused-expressions
     str[i] === str[i].toLowerCase() ? (a = alphabet) : (a = ALPHABET);
-    str[i] = a.charAt(a.indexOf(str[i]) + 1);
+    str[i] = a.charAt((a.indexOf(str[i]) + 1) % 26);
   }
 
   return str.join('');
