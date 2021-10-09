@@ -7,3 +7,7 @@ it(`should return "true"`, () => {
 it(`should return "5"`, () => {
   expect(calculator.add(2, 3)).toBe(5);
 });
+
+it(`should return "6"`, () => {
+  expect(calculator.add(3,3)).toBe(6);
+});
