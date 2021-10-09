@@ -7,4 +7,10 @@ describe('caesar', () => {
   it(`should replace z  with a`, () => {
     expect(caesar('xyz')).toBe('yza');
   });
+  it(`should keep the same case`, () => {
+    expect(caesar('Hi')).toBe('Ij');
+  });
+  it(`should preserve punctuation!`, () => {
+    expect(caesar('hello!')).toBe('ifmmp!');
+  });
 });
